@@ -89,6 +89,8 @@ output {
 [INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"sys_user_mapping", "order"=>1, "settings"=>{"number_of_shards"=>"1", "number_of_replicas"=>"1"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>false}, "date_detection"=>true, "numeric_detection"=>true, "dynamic_templates"=>[{"str"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "fields"=>{"raw"=>{"type"=>"keyword", "ignore_above"=>256}}}}}]}}}}
 ~~~
 
+>이제 conf파일을 실행시키면 템플릿적용까지 시키니 따로 템플릿을 등록(readme 1번)하지 않아도 됩니다.
+
 ### 2.2 csv Parsing Error
 ~~~bash
 Error parsing csv {:field=>"message", :source=>"", :exception=>#<NoMethodError: undefined method `each_index' for nil:NilClass>}
