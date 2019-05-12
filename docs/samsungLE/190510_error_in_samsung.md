@@ -1,6 +1,10 @@
 # Error
+>**버전정보**  
+>`logstash` 5.4.1  
+>`elasticsearch` 6.7.1  
 
->수정코드 : [Box Link](https://ibm.ent.box.com/folder/76356961446)
+## 0. 수정된 코드 
+[Box Link](https://ibm.ent.box.com/folder/76356961446)
 
 ## 1. init_report_model.sh in es 6.x
 
@@ -63,7 +67,7 @@ readme 1번에서 생성했던 템플릿인 sys_user_mapping을 사용하지 않
 **해결**  
 logstash의 conf파일을 수정해주어야한다.  
 
-~~~json
+~~~bash
 output {
     stdout { codec => json }
     elasticsearch {
