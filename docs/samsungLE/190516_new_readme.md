@@ -1,6 +1,6 @@
 # LE Custom Chart Demo Test
 
-> Last Test env Ver.
+> Last Test env Ver.  
 >`logstash` v5.4.1  
 >`elasticsearch` v6.7.1  
 
@@ -83,7 +83,7 @@ template는 json파일로 구성되어있다.
 >다음 커맨드를 실행하기 전에  
 >1. sys_user_mapping 인덱스 삭제
 >2. sys_user_mapping 템플릿 삭제
->3. .opsition 파일 삭제
+>3. .opsition 파일 삭제  
 >를 진행한 후에 실행해야함.  
 
 conf file을 실행시키는 커맨드는 다음과 같다.  
@@ -165,7 +165,7 @@ $ ./init_report_model.sh
 ~~~
 
 차트를 새로 만든 결과  
-![image](https://user-images.githubusercontent.com/15958325/57895700-02d66080-7888-11e9-97e6-1d9335f2242c.png)  
+![image](https://user-images.githubusercontent.com/15958325/57895777-6c566f00-7888-11e9-81a3-30bbb9db0f4f.png) 
 
 ![image](https://user-images.githubusercontent.com/15958325/57895704-05d15100-7888-11e9-8603-d041d75f983c.png)  
 
