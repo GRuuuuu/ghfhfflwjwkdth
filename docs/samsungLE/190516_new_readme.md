@@ -84,6 +84,7 @@ template는 json파일로 구성되어있다.
 >1. sys_user_mapping 인덱스 삭제
 >2. sys_user_mapping 템플릿 삭제
 >3. .opsition 파일 삭제  
+>
 >를 진행한 후에 실행해야함.  
 
 conf file을 실행시키는 커맨드는 다음과 같다.  
