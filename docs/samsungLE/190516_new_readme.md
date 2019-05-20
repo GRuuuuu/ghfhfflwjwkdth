@@ -165,7 +165,7 @@ es의 모델을 update해주는 과정이다.
 $ ./init_report_model.sh
 ~~~
 
-차트를 새로 만든 결과   
+`lsf_job_acct-*` 인덱스로 차트를 새로 만든 결과   
 ![image](https://user-images.githubusercontent.com/15958325/57895704-05d15100-7888-11e9-8603-d041d75f983c.png)  
 
 ![image](https://user-images.githubusercontent.com/15958325/57895705-0964d800-7888-11e9-8389-a30a9626582e.png)
