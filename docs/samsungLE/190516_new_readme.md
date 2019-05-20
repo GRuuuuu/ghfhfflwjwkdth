@@ -158,7 +158,7 @@ $ perfadmin start all
 ~~~  
 
 ## STEP 3. Report customization description
-`department_name`이 포함된 doc들이 구성완료가 되면 chart를 생성할때 department_name 필드도 추가되어야 chart에서 확인할 수 있다.  
+`department_name`이 포함된 doc들이 구성완료가 되면 chart를 생성할때 `department_name` 필드도 추가되어야 chart에서 확인할 수 있다.  
 es의 모델을 update해주는 과정이다.  
 
 ~~~bash
