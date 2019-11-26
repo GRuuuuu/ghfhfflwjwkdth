@@ -45,6 +45,7 @@ int main(void)
     //Parent
     if(pid!=0){
         //Nothing
+        wait();
     }
 
     //Child
@@ -65,7 +66,7 @@ int main(void)
         {
             if(i != 0 && i%32 == 0)
             {//sleep every SLEEP time
-                prinf("using %d MB\n",i)
+                printf("using %d MB\n",i);
                 sleep(SLEEP);
             }
             for(j=0; j<page; j++){
