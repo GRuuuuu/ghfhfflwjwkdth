@@ -1,0 +1,40 @@
+$TTL 1D
+@   IN SOA  @ hololy-local.com. (
+                    0   ; serial
+                    1D  ; refresh
+                    1H  ; retry
+                    1W  ; expire
+                    3H )    ; minimum
+    IN NS   hololy-local.com.
+    IN A    192.168.56.114
+ns  IN A    192.168.56.114
+
+;cluster name
+tests   IN CNAME    @
+
+;ocp cluster
+bootstrap.hololy-local.com. IN  A   192.168.56.201
+master1.tests.hololy-local.com. IN  A   192.168.56.202
+master2.tests.hololy-local.com. IN  A   192.168.56.203
+master3.tests.hololy-local.com. IN  A   192.168.56.204
+worker1.tests.hololy-local.com. IN  A   192.168.56.205
+worker2.tests.hololy-local.com. IN  A   192.168.56.206
+
+
+;ocp internal cluster ip
+etcd-0.tests.hololy-local.com.  IN A    192.168.56.202
+etcd-1.tests.hololy-local.com.  IN A    192.168.56.203
+etcd-2.tests.hololy-local.com.  IN A    192.168.56.204
+
+api-int.tests   IN CNAME    @
+api.tests   IN CNAME    @
+*.apps.tests    IN CNAME    @
+apps.tests  IN CNAME    @
+
+console-openshift-console.apps.tests.hololy-local.com.  IN  A   192.168.56.114
+oauth-openshift.apps.tests.hololy-local.com.    IN  A   192.168.56.114
+
+;ocp srv records
+_etcd-server-ssl._tcp.tests.hololy-local.com.   86400   IN   SRV    0   10  2380    etcd-0.tests.hololy-local.com.
+_etcd-server-ssl._tcp.tests.hololy-local.com.   86400   IN   SRV    0   10  2380    etcd-1.tests.hololy-local.com.
+_etcd-server-ssl._tcp.tests.hololy-local.com.   86400   IN   SRV    0   10  2380    etcd-2.tests.hololy-local.com.
